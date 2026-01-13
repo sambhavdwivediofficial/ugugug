@@ -1,86 +1,53 @@
-# Nexus Task Manager 📋
+Nexus Task Manager
+Project Description
+A modern, feature-rich task management web application built with Vanilla JavaScript, HTML5, and CSS3. No frameworks or libraries used.
 
-## 🎯 Project Overview
-**Nexus Task Manager** is a sophisticated, full-featured task management web application built entirely with Vanilla JavaScript, HTML5, and CSS3. This application provides a modern, intuitive interface for managing daily tasks with advanced features like priority management, task categorization, data persistence, and comprehensive filtering capabilities.
+Features
+Add, edit, delete tasks
 
-## 📋 Table of Contents
-- [Problem Statement](#problem-statement)
-- [Features Implemented](#features-implemented)
-- [DOM Concepts Used](#dom-concepts-used)
-- [Technical Implementation](#technical-implementation)
-- [Project Structure](#project-structure)
-- [Installation & Usage](#installation--usage)
-- [Key Features Deep Dive](#key-features-deep-dive)
-- [Code Architecture](#code-architecture)
-- [Performance Optimization](#performance-optimization)
-- [Browser Compatibility](#browser-compatibility)
-- [Known Limitations](#known-limitations)
-- [Future Enhancements](#future-enhancements)
-- [Project Demonstration](#project-demonstration)
-- [Developer Information](#developer-information)
+Priority levels (Low, Medium, High)
 
-## 🎯 Problem Statement
-In today's fast-paced digital world, individuals and professionals struggle with task management across multiple platforms. Most task managers are either too simplistic or require complex setups. **Nexus Task Manager** addresses this gap by providing:
+Task categories and due dates
 
-1. **Centralized Task Management** - All tasks in one intuitive interface
-2. **Zero Dependency** - No external frameworks or libraries required
-3. **Offline Functionality** - Complete functionality without internet connection
-4. **Data Privacy** - All data stored locally in browser
-5. **Cross-Platform Access** - Works on any device with a modern browser
+LocalStorage for data persistence
 
-## ✨ Features Implemented
+Filter and search tasks
 
-### 🎯 Core Features
-1. **Task CRUD Operations**
-   - Create new tasks with multiple attributes
-   - Read tasks with various views and filters
-   - Update existing tasks
-   - Delete tasks with recovery option
+Responsive glassmorphism design
 
-2. **Advanced Task Properties**
-   - Title and Description
-   - Priority Levels (Low, Medium, High)
-   - Custom Categories
-   - Due Dates with calendar integration
-   - Important flag for quick identification
-   - Completion status tracking
+Export tasks as JSON
 
-3. **Data Management**
-   - LocalStorage persistence
-   - 30-day deleted tasks retention
-   - JSON export functionality
-   - Automatic data cleanup
+Deleted tasks recovery system
 
-### 🎨 UI/UX Features
-1. **Glassmorphism Design**
-   - Modern translucent UI elements
-   - Gradient color schemes
-   - Smooth animations and transitions
-   - Responsive layout for all devices
+DOM Concepts Used
+Dynamic DOM element creation
 
-2. **Interactive Elements**
-   - Real-time statistics dashboard
-   - Progress visualization
-   - Toast notification system
-   - Modal dialogs for actions
-   - Floating Action Button (FAB)
+Event handling and delegation
 
-## 🔧 DOM Concepts Used
+Form validation
 
-### 1. **Dynamic DOM Creation & Manipulation**
-**Location**: `task.js` - `renderTasks()`, `renderSelectTaskList()`, `renderRestoreTaskList()`
+Modal management
 
-**Implementation**:
-```javascript
-taskList.innerHTML = filteredTasks.map(task => {
-    return `
-        <div class="task-item" data-id="${task.id}">
-            <div class="task-header">
-                <div class="task-title">
-                    <div class="task-checkbox ${task.completed ? 'checked' : ''}"></div>
-                    ${task.title}
-                </div>
-            </div>
-        </div>
-    `;
-}).join('');
+LocalStorage integration
+
+Real-time UI updates
+
+How to Run
+Download all files (index.html, task.css, task.js)
+
+Open index.html in any modern browser
+
+No installation required
+
+Technologies Used
+HTML5
+
+CSS3 (Flexbox/Grid)
+
+Vanilla JavaScript (ES6+)
+
+Browser LocalStorage API
+
+Developer
+Sambhav Dwivedi
+Web Dev II - Batch 2029
